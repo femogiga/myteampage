@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+body {
+    /* width:40%; */
+    font-family: Roboto;
+}
+
+.hero {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 2rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header>div {
+    width: 50%;
+    width: 40%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+.img__cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.img__cont>img {
+    object-fit: cover;
+
+}
+
+.card {
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+
+    flex-shrink: 1;
+    flex-basis: 33%;
+
+}
+
+
+.card p {
+    transform-origin: top left;
+    transform: rotate(90deg);
+    position: relative;
+    left: 15%;
+}
+
+
+
+main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(5) {
+    margin-top: 4rem;
+}
+
+
+@media only screen and (max-width:1187px) {
+    .row {
+        flex-direction: column;
+
+    }
+
+    .header>h1,
+    .header>div {
+        width: 80%
+    }
+
+
+    .card:nth-of-type(2) {
+        margin-top: 0rem;
+    }
+
+    .card:nth-of-type(2),
+    .card:nth-of-type(4),
+    .card:nth-of-type(6) {
+        margin-top: 2rem;
+    }
+
+    .card:nth-of-type(6) {
+
+        margin-top: 6rem;
+    }
+
+}
